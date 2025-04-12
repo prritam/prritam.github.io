@@ -1,0 +1,5 @@
+// Dark mode toggle
+document.getElementById("themeToggle").addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+  });
+  
