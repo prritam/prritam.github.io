@@ -113,12 +113,21 @@
   }
 
   /* Certification */
-  .cert-slider {
+  .cert-marquee {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    padding: 20px 0;
+  }
+  
+  .cert-track {
     display: flex;
     gap: 20px;
-    overflow-x: auto;
-    padding-bottom: 10px;
-    scroll-snap-type: x mandatory;
+    animation: scrollLeft 20s linear infinite;
+  }
+  
+  .cert-marquee:hover .cert-track {
+    animation-play-state: paused; /* pause on hover */
   }
   
   .cert-card {
@@ -127,18 +136,14 @@
     background: white;
     padding: 10px;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-    scroll-snap-align: start;
     transition: transform 0.3s;
-  }
-  
-  .cert-card:hover {
-    transform: scale(1.05);
   }
   
   .cert-card img {
     width: 100%;
+    height: auto;
     border-radius: 8px;
     cursor: pointer;
   }
@@ -147,6 +152,16 @@
     font-weight: 500;
     margin-top: 8px;
     font-size: 14px;
+  }
+  
+  /* Keyframes for scrolling */
+  @keyframes scrollLeft {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
   }
   
   /* Modal Styles */

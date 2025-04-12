@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Pritam Mane | Portfolio</title>
+  <title>Pritam Mane</title>
   <link rel="stylesheet" href="style.css" />
   <script src="script.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-/o3V3WfG1cRvK+zDZsVjHV1QvQ6RI3ozYrjz0HL7d4kx3Uw4OeXzcsX7z0bYkgY5BD2psXgkq9Qvl2Y3rb7kg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -12,14 +12,14 @@
 <body>
 
   <header class="hero">
-    <h1>Hey, I'm <span>Pritam Mane</span></h1>
-    <p> Developer | Creative Thinker | Problem Solver</p>
     <div class="cta-buttons">
       <a href="#projects">Projects</a>
       <a href="#contact">Contact</a>
       <a href="#certifications">Certifications</a>
+      <button id="themeToggle">🌙</button>
     </div>
-    <button id="themeToggle">🌙</button>
+    <h1>Hey, I'm <span>Pritam Mane</span></h1>
+    <p> Developer | Creative Thinker | Problem Solver</p>
   </header>
 
   <section id="about">
@@ -74,52 +74,43 @@
 
   <section id="certifications">
     <h2>📜 Certifications</h2>
-    <div class="cert-slider">
-      <div class="cert-card">
-        <img src="images/cert1.jpg" alt="Full Stack Certificate" onclick="openModal(this)">
-        <p>Full Stack Web Development - Coursera</p>
+    <div class="cert-marquee">
+      <div class="cert-track">
+        <div class="cert-card">
+          <img src="images/cert1.jpg" alt="Full Stack">
+          <p>Full Stack Web Development - Coursera</p>
+        </div>
+        <div class="cert-card">
+          <img src="images/cert2.jpg" alt="Google Cloud">
+          <p>Google Cloud Fundamentals</p>
+        </div>
+        <div class="cert-card">
+          <img src="images/cert1.jpg" alt="Full Stack">
+          <p>Full Stack Web Development - Coursera</p>
+        </div>
+        <div class="cert-card">
+          <img src="images/cert2.jpg" alt="Google Cloud">
+          <p>Google Cloud Fundamentals</p>
+        </div>
+        <div class="cert-card">
+          <img src="images/cert1.jpg" alt="Full Stack">
+          <p>Full Stack Web Development - Coursera</p>
+        </div>
+        <div class="cert-card">
+          <img src="images/cert2.jpg" alt="Google Cloud">
+          <p>Google Cloud Fundamentals</p>
+        </div>
+        <div class="cert-card">
+          <img src="images/cert1.jpg" alt="Full Stack">
+          <p>Full Stack Web Development - Coursera</p>
+        </div>
+        <div class="cert-card">
+          <img src="images/cert2.jpg" alt="Google Cloud">
+          <p>Google Cloud Fundamentals</p>
+        </div>
       </div>
-      <div class="cert-card">
-        <img src="images/cert2.jpg" alt="Google Cloud Fundamentals" onclick="openModal(this)">
-        <p>Google Cloud Fundamentals - Qwiklabs</p>
-      </div>
-      <div class="cert-card">
-        <img src="images/cert2.jpg" alt="Google Cloud Fundamentals" onclick="openModal(this)">
-        <p>Google Cloud Fundamentals - Qwiklabs</p>
-      </div>
-      <div class="cert-card">
-        <img src="images/cert2.jpg" alt="Google Cloud Fundamentals" onclick="openModal(this)">
-        <p>Google Cloud Fundamentals - Qwiklabs</p>
-      </div>
-      <div class="cert-card">
-        <img src="images/cert2.jpg" alt="Google Cloud Fundamentals" onclick="openModal(this)">
-        <p>Google Cloud Fundamentals - Qwiklabs</p>
-      </div>
-      <div class="cert-card">
-        <img src="images/cert2.jpg" alt="Google Cloud Fundamentals" onclick="openModal(this)">
-        <p>Google Cloud Fundamentals - Qwiklabs</p>
-      </div>
-      <div class="cert-card">
-        <img src="images/cert2.jpg" alt="Google Cloud Fundamentals" onclick="openModal(this)">
-        <p>Google Cloud Fundamentals - Qwiklabs</p>
-      </div>
-      <div class="cert-card">
-        <img src="images/cert2.jpg" alt="Google Cloud Fundamentals" onclick="openModal(this)">
-        <p>Google Cloud Fundamentals - Qwiklabs</p>
-      </div>
-      <div class="cert-card">
-        <img src="images/cert2.jpg" alt="Google Cloud Fundamentals" onclick="openModal(this)">
-        <p>Google Cloud Fundamentals - Qwiklabs</p>
-      </div>
-    </div>
-  
-    <!-- Modal Popup -->
-    <div id="imageModal" class="modal" onclick="closeModal()">
-      <span class="close">&times;</span>
-      <img class="modal-content" id="modalImage">
     </div>
   </section>
-  
 
   <section id="contact">
     <h2>📬 Contact Me</h2>
