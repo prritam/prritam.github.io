@@ -5,69 +5,180 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Pritam Mane</title>
   <link rel="stylesheet" href="style.css" />
-  <script src="script.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-/o3V3WfG1cRvK+zDZsVjHV1QvQ6RI3ozYrjz0HL7d4kx3Uw4OeXzcsX7z0bYkgY5BD2psXgkq9Qvl2Y3rb7kg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-/o3V3WfG1cRvK+zDZsVjHV1QvQ6RI3ozYrjz0HL7d4kx3Uw4OeXzcsX7z0bYkgY5BD2psXgkq9Qvl2Y3rb7kg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet"/>
 </head>
 <body>
 
   <header class="hero">
-    <div class="cta-buttons">
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-      <a href="#certifications">Certifications</a>
-      <button id="themeToggle">🌙</button>
+    <nav class="top-nav">
+      <div class="cta-buttons">
+        <a href="#projects">Projects</a>
+        <a href="#certifications">Certifications</a>
+        <a href="https://github.com/prritam" target="_blank" class="github-btn">
+          <i class="fab fa-github"></i> GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/pritam-mane-a75322200/" target="_blank"><i class="fab fa-linkedin"></i>LinkedIn</a>
+        <a href="https://leetcode.com/u/pritam_03" target="_blank">LeetCode</a>
+        <a href="https://docs.google.com/document/d/1HcVB5mxCo02AwLFXb-Bu4ZrAZHMArLi41vyRpfRqksk/edit?usp=sharing" target="_blank"></i>Resume</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  
+    <div class="hero-intro">
+      <h1>Hey, I'm <span>Pritam Mane</span></h1>
+      <p>Developer | Creative Thinker | Problem Solver</p>
     </div>
-    <h1>Hey, I'm <span>Pritam Mane</span></h1>
-    <p> Developer | Creative Thinker | Problem Solver</p>
   </header>
+  
 
   <section id="about">
     <h2>🙋‍♂️ About Me</h2>
-    <p>I’m a passionate web developer who loves building clean, efficient, and user-focused websites. Always learning, always building!</p>
+    <p>I’m a passionate developer who loves building clean, efficient, and user-focused websites. Always learning, always building!</p>
   </section>
 
-  <section id="skills">
+  <section id="skills" data-aos="zoom-in">
     <h2>💻 Tech Stack</h2>
-    <div class="tech-tags">
-      <span>HTML</span><span>CSS</span><span>JavaScript</span>
-      <span>React</span><span>Node.js</span><span></span> <span>HTML</span><span>CSS</span><span>JavaScript</span>
-      <span>React</span><span>Node.js</span><span></span>
+    <div class="tech-grid">
+  
+      <div class="tech-card" title="HTML5">
+        <i class="fab fa-html5"></i>
+        <p>HTML5</p>
+      </div>
+  
+      <div class="tech-card" title="CSS3">
+        <i class="fab fa-css3-alt"></i>
+        <p>CSS3</p>
+      </div>
+  
+      <div class="tech-card" title="JavaScript">
+        <i class="fab fa-js"></i>
+        <p>JavaScript</p>
+      </div>
+  
+      <div class="tech-card" title="React">
+        <i class="fab fa-react"></i>
+        <p>React</p>
+      </div>
+  
+      <div class="tech-card" title="Node.js">
+        <i class="fab fa-node-js"></i>
+        <p>Node.js</p>
+      </div>  
+      <div class="tech-card" title="Python">
+        <i class="fab fa-python"></i>
+        <p>Python</p>
+      </div>
+  
+      <div class="tech-card" title="Docker">
+        <i class="fab fa-docker"></i>
+        <p>Docker</p>
+      </div>
+  
+      <div class="tech-card" title="Git">
+        <i class="fab fa-git-alt"></i>
+        <p>Git</p>
+      </div>
+      <div class="tech-card" title="PyQt">
+        <i class="fas fa-puzzle-piece"></i>
+        <p>PyQt</p>
+      </div>
+  
+      <div class="tech-card" title="Linux">
+        <i class="fab fa-linux"></i>
+        <p>Linux</p>
+      </div>
+      <div class="tech-card" title="Kubernetes">
+        <i class="fas fa-network-wired"></i>
+        <p>Kubernetes</p>
+      </div>
+  
+      <div class="tech-card" title="Cloud">
+        <i class="fas fa-cloud"></i>
+        <p>Cloud</p>
+      </div>
+  
+      <div class="tech-card" title="DevOps">
+        <i class="fas fa-cogs"></i>
+        <p>DevOps</p>
+      </div>
+      <div class="tech-card" title="C">
+        <i class="fas fa-c"></i>
+        <p></p>
+      </div>
+      
+      <div class="tech-card" title="C++">
+        <i class="devicon-cplusplus-plain colored"></i>
+        <p>C++</p>
+      </div>
+      
+      <div class="tech-card" title="Google Test (gtest)">
+        <i class="fas fa-vial"></i>
+        <p>gtest</p>
+      </div>
+  
     </div>
   </section>
+  <section id="experience">
+    <h2>💼 Work Experience</h2>
+    <div class="timeline-container">
+      
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h3>Tata Elxsi, Bengaluru</h3>
+          <span class="exp-date">MARCH 2024 – Present</span>
+          <p>Currently working as a Software Engineer contributing to innovative Avionics & embedded software solutions.</p>
+        </div>
+      </div>
+  
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h3>TechSid Software Solutions, Karad, MH</h3>
+          <span class="exp-date">Internship – 2023</span>
+          <p>Worked on frontend technologies and collaborated on live projects involving UI/UX and web functionality.</p>
+        </div>
+      </div>
+  
+    </div>
+  </section>
+  
+  
 
   <section id="projects">
     <h2>🧠 Projects</h2>
     <div class="project-grid">
       <div class="project-card">
-        <h3>Portfolio Website</h3>
+        <h3>Stock Market Portfolio Analysis</h3>
         <p>A modern personal portfolio built with HTML, CSS & JS.</p>
-        <a href="#">View Code</a>
+        <a href="https://github.com/prritam/Stock_Market_Portfolio">View Code</a>
       </div>
       <div class="project-card">
-        <h3>Task Manager</h3>
-        <p>Task tracking app with MongoDB, Express, React & Node.</p>
-        <a href="#">Live Demo</a>
+        <h3>Quiz APP</h3>
+        <p>Simple Quiz-application using Javascript.</p>
+        <a href="https://github.com/prritam/quiz-js">View code</a>
       </div>
       <div class="project-card">
-        <h3>Task Manager</h3>
-        <p>Task tracking app with MongoDB, Express, React & Node.</p>
-        <a href="#">Live Demo</a>
+        <h3>Rock Paper Scissor</h3>
+        <p>Rock Paper Scissor commandline application using JavaScript.</p>
+        <a href="https://github.com/prritam/RockPaperScissor">View Code</a>
       </div>
       <div class="project-card">
-        <h3>Task Manager</h3>
-        <p>Task tracking app with MongoDB, Express, React & Node.</p>
-        <a href="#">Live Demo</a>
+        <h3>Text-to-Speech & viceversa</h3>
+        <p>Javascript project  to convert text into speech and vice versa.</p>
+        <a href="magical-sprite-c7dea3.netlify.app/">Live Demo</a>
       </div>
       <div class="project-card">
-        <h3>Task Manager</h3>
-        <p>Task tracking app with MongoDB, Express, React & Node.</p>
-        <a href="#">Live Demo</a>
+        <h3>BooKList</h3>
+        <p>BookLet Applicatiton without the framework.</p>
+        <a href="https://gleaming-moonbeam-e8c3d5.netlify.app/">Live Demo</a>
       </div>
       <div class="project-card">
-        <h3>Task Manager</h3>
-        <p>Task tracking app with MongoDB, Express, React & Node.</p>
-        <a href="#">Live Demo</a>
+        <h3>Portfolio</h3>
+        <p>Personal portfolio website.</p>
+        <a href="https://github.com/prritam/prritam.github.io">View Code</a>
       </div>
     </div>
   </section>
@@ -110,6 +221,10 @@
         </div>
       </div>
     </div>
+    <div id="imageModal" class="modal" onclick="closeModal()">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="modalImage">
+    </div>
   </section>
 
   <section id="contact">
@@ -129,7 +244,7 @@
   
 
   <footer>
-    <p>Made with ❤️ by Pritam Mane © 2025</p>
+    <p> © 2025 Pritam Mane</p>
   </footer>
 
   <script src="script.js"></script>
