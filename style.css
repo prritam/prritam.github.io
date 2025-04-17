@@ -333,7 +333,7 @@ button:hover {
 .cert-track {
   display: flex;
   gap: 20px;
-  animation: scrollLeft 5s linear infinite;
+  animation: scrollLeft 10ms linear infinite;
   scroll-behavior: smooth;
   will-change: transform;
   cursor: grab;
