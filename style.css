@@ -332,10 +332,10 @@ button:hover {
 .cert-track {
   display: flex;
   gap: 20px;
-  animation: scrollLeft 2s linear infinite;
+  animation: scrollLeft 20ms linear infinite;
   scroll-behavior: smooth;
   will-change: transform;
-  cursor: grab;
+ 
 }
 @keyframes scrollLeft {
   0% {
@@ -376,7 +376,7 @@ button:hover {
 
   .cert-track {
     scroll-behavior: smooth;
-    animation: scrollLeft 2s linear infinite;
+    animation: scrollLeft 20s linear infinite;
     cursor: grab;
   }
 }
