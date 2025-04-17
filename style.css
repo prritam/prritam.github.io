@@ -15,7 +15,10 @@ h1 {
   color: #54dd38;
 }
 h2{
-  color:#4db154
+  color:#4db154;
+}
+h3{
+  color:#cef1d0;
 }
 .hero {
   background: linear-gradient(to right, #44964a, #3f803f);
@@ -175,7 +178,6 @@ section {
 
 /* Tooltip fallback using title attribute */
 .tech-card[title]:hover::after {
-  content: attr(title);
   position: absolute;
   background: #333;
   color: #fff;
@@ -325,13 +327,16 @@ button:hover {
   height: max-content;
   padding: 10px 0;
   box-sizing: border-box;
+  touch-action: pan-x;
+  user-select: none;
 }
 .cert-track {
   display: flex;
   gap: 20px;
-  animation: scrollLeft 10s linear infinite;
+  animation: scrollLeft 5s linear infinite;
   scroll-behavior: smooth;
   will-change: transform;
+  cursor: grab;
 }
 @keyframes scrollLeft {
   0% {
@@ -371,7 +376,9 @@ button:hover {
   }
 
   .cert-track {
+    scroll-behavior: smooth;
     animation: scrollLeft 10s linear infinite;
+    cursor: grab;
   }
 }
 
