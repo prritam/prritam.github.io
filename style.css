@@ -268,9 +268,11 @@ body.dark-mode .tech-card span {
 
 
 .project-grid {
-  display: flex;
-  flex-wrap: wrap;
+  
+   display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   gap: 20px;
+  margin-top: 20px;
 }
 .project-card {
   flex: 1 1 45%;
