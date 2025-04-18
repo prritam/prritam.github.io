@@ -327,6 +327,8 @@ button:hover {
   height: max-content;
   padding: 10px 0;
   box-sizing: border-box;
+  touch-action: pan-x;
+  user-select: none;
   
 }
 .cert-track {
@@ -335,6 +337,7 @@ button:hover {
   animation: scrollLeft 20ms linear infinite;
   scroll-behavior: smooth;
   will-change: transform;
+  cursor: grab;
  
 }
 @keyframes scrollLeft {
