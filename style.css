@@ -268,9 +268,11 @@ body.dark-mode .tech-card span {
 
 
 .project-grid {
-  display: flex;
+  display: grid;
   flex-wrap: wrap;
   gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  margin-top: 20px;
 }
 .project-card {
   flex: 1 1 45%;
@@ -329,14 +331,16 @@ button:hover {
   box-sizing: border-box;
   touch-action: pan-x;
   user-select: none;
+  
 }
 .cert-track {
   display: flex;
   gap: 20px;
-  animation: scrollLeft 10ms linear infinite;
+  animation: scrollLeft 1s linear infinite;
   scroll-behavior: smooth;
   will-change: transform;
   cursor: grab;
+ 
 }
 @keyframes scrollLeft {
   0% {
@@ -377,7 +381,7 @@ button:hover {
 
   .cert-track {
     scroll-behavior: smooth;
-    animation: scrollLeft 10s linear infinite;
+    animation: scrollLeft 1s linear infinite;
     cursor: grab;
   }
 }
