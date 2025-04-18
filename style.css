@@ -334,7 +334,7 @@ button:hover {
 .cert-track {
   display: flex;
   gap: 20px;
-  animation: scrollLeft 20s linear infinite;
+  animation: scrollLeft 2s linear infinite;
   scroll-behavior: smooth;
   will-change: transform;
   cursor: grab;
