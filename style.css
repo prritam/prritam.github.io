@@ -403,22 +403,6 @@ button:hover {
   font-size: 14px;
 }
 
-.download-btn {
-  display: inline-block;
-  margin-top: 5px;
-  background: #4CAF50;
-  color: white;
-  padding: 6px 12px;
-  border-radius: 6px;
-  font-size: 13px;
-  text-decoration: none;
-  transition: background 0.3s ease;
-}
-
-.download-btn:hover {
-  background: #388E3C;
-}
-
 /* Edge fade effect */
 .cert-marquee::before,
 .cert-marquee::after {
