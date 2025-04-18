@@ -37,7 +37,7 @@ marquee.addEventListener('mousemove', (e) => {
   if (!isDragging) return;
   e.preventDefault();
   const x = e.pageX - marquee.offsetLeft;
-  const walk = (x - startX) * 2; // scroll speed
+  const walk = (x - startX) * 10; // scroll speed
   marquee.scrollLeft = scrollLeft - walk;
 });
 
